@@ -1,4 +1,5 @@
 # Email-filtering simple reflex agent
+An email-filtering agent classifies incoming messages as email or spam using allow and restrict lists of sender domains, and a list of bad words checked against message bodies and attachments.
 
 ## Rules 
 1. Sender domain in `allow.txt` -> `email/` regardless of contents.
@@ -24,7 +25,7 @@ Expected classifications:
 
 ## Run automated tests
 
-From the project root:
+From this directory, run:
 
 ```bash
 python -m unittest discover -s tests -v
